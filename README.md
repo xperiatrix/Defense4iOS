@@ -10,6 +10,6 @@ Attack and Defense solutions for iOS. (This ReadMe.md file will be updated soon.
 * Prevent Attaching-Debug in dlopen
 * Prevent fishhook from hooking system-core methods
 * Clang sanitizer for binary-reSort and global-methods-hook(AssemblyLevel) 
-
+![](./Images/Clang-PC-Trace.png)
 ![](./Images/Before-BinSort.png)
 ![](./Images/After-BinSort.png)

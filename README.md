@@ -12,4 +12,5 @@ Attack and Defense solutions for iOS. (This ReadMe.md file will be updated soon.
 * Clang sanitizer for binary-reSort and global-methods-hook(AssemblyLevel) 
 ![](./Images/Clang-PC-Trace.png)
 ![](./Images/Before-BinSort.png)
-![](./Images/After-BinSort.png)
+![](./Images/After-BinSort.png)  
+* ReSignature for dumped-ipa file and ReLink to new current xcode project

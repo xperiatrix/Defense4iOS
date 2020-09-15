@@ -1,0 +1,4 @@
+-[AppDelegate application:didFinishLaunchingWithOptions:]
++[ViewController load]
+-[ViewController runningOrderTest]
+-[ViewController viewDidLoad]

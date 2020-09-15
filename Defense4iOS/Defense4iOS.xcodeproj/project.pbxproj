@@ -21,6 +21,7 @@
 		457AFEB224F91490004A593E /* CodeInjection.m in Sources */ = {isa = PBXBuildFile; fileRef = 457AFEB024F91490004A593E /* CodeInjection.m */; };
 		457AFEB624F92F49004A593E /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 457AFEB424F92F49004A593E /* fishhook.h */; };
 		457AFEB724F92F49004A593E /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 457AFEB524F92F49004A593E /* fishhook.c */; };
+		45D4C7682510F8DD00C6D2E6 /* libclang.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D4C7672510F8DD00C6D2E6 /* libclang.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,15 @@
 		457AFEB024F91490004A593E /* CodeInjection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeInjection.m; sourceTree = "<group>"; };
 		457AFEB424F92F49004A593E /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
 		457AFEB524F92F49004A593E /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		45D4C7652510EF0400C6D2E6 /* libclang.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libclang.dylib; path = Utils/libclang.dylib; sourceTree = "<group>"; };
+		45D4C7672510F8DD00C6D2E6 /* libclang.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libclang.dylib; path = Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib; sourceTree = DEVELOPER_DIR; };
+		45D4C76A2510FA8800C6D2E6 /* Index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Index.h; sourceTree = "<group>"; };
+		45D4C76B2510FA8800C6D2E6 /* BuildSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildSystem.h; sourceTree = "<group>"; };
+		45D4C76C2510FA8800C6D2E6 /* Documentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Documentation.h; sourceTree = "<group>"; };
+		45D4C76D2510FA8800C6D2E6 /* CXCompilationDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXCompilationDatabase.h; sourceTree = "<group>"; };
+		45D4C76E2510FA8800C6D2E6 /* CXErrorCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXErrorCode.h; sourceTree = "<group>"; };
+		45D4C76F2510FA8800C6D2E6 /* CXString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXString.h; sourceTree = "<group>"; };
+		45D4C7702510FA8800C6D2E6 /* Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Platform.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45D4C7682510F8DD00C6D2E6 /* libclang.dylib in Frameworks */,
 				457AFEA924F9140E004A593E /* Attacks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +106,7 @@
 				457AFE7E24F911D8004A593E /* Defense4iOS */,
 				457AFEA324F9140E004A593E /* Attacks */,
 				457AFE7D24F911D8004A593E /* Products */,
+				45D4C7642510EF0400C6D2E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +122,7 @@
 		457AFE7E24F911D8004A593E /* Defense4iOS */ = {
 			isa = PBXGroup;
 			children = (
+				45D4C7692510FA8800C6D2E6 /* clang-c */,
 				457AFE9824F911E3004A593E /* DefenseKit */,
 				457AFE7F24F911D8004A593E /* AppDelegate.h */,
 				457AFE8024F911D8004A593E /* AppDelegate.m */,
@@ -153,6 +166,29 @@
 				457AFEB424F92F49004A593E /* fishhook.h */,
 			);
 			path = fishhook;
+			sourceTree = "<group>";
+		};
+		45D4C7642510EF0400C6D2E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45D4C7672510F8DD00C6D2E6 /* libclang.dylib */,
+				45D4C7652510EF0400C6D2E6 /* libclang.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45D4C7692510FA8800C6D2E6 /* clang-c */ = {
+			isa = PBXGroup;
+			children = (
+				45D4C76A2510FA8800C6D2E6 /* Index.h */,
+				45D4C76B2510FA8800C6D2E6 /* BuildSystem.h */,
+				45D4C76C2510FA8800C6D2E6 /* Documentation.h */,
+				45D4C76D2510FA8800C6D2E6 /* CXCompilationDatabase.h */,
+				45D4C76E2510FA8800C6D2E6 /* CXErrorCode.h */,
+				45D4C76F2510FA8800C6D2E6 /* CXString.h */,
+				45D4C7702510FA8800C6D2E6 /* Platform.h */,
+			);
+			path = "clang-c";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,13 +473,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 497KMMCX78;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Defense4iOS";
 				INFOPLIST_FILE = Defense4iOS/Info.plist;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"$(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib",
 				);
-				ORDER_FILE = /Users/yangjungan/Developer/Works/iOS/AttacksNdefenses/Defense4iOS/Defense4iOS/running.order;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Utils",
+				);
+				ORDER_FILE = "$(SRCROOT)/Defense4iOS/running.order";
 				OTHER_CFLAGS = "-fsanitize-coverage=trace-pc-guard";
 				PRODUCT_BUNDLE_IDENTIFIER = com.toureek.defense.Defense4iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -457,13 +499,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 497KMMCX78;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Defense4iOS";
 				INFOPLIST_FILE = Defense4iOS/Info.plist;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"$(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib",
 				);
-				ORDER_FILE = /Users/yangjungan/Developer/Works/iOS/AttacksNdefenses/Defense4iOS/Defense4iOS/running.order;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Utils",
+				);
+				ORDER_FILE = "$(SRCROOT)/Defense4iOS/running.order";
 				OTHER_CFLAGS = "-fsanitize-coverage=trace-pc-guard";
 				PRODUCT_BUNDLE_IDENTIFIER = com.toureek.defense.Defense4iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";

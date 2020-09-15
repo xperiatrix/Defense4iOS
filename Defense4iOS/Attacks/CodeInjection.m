@@ -13,7 +13,7 @@
 @implementation CodeInjection
 
 + (void)load {
-    [self fishHookPtraceForHackingApp];
+//    [self fishHookPtraceForHackingApp];
 }
 
 int (*pointerOnSystemPtrace)(int _request, pid_t _pid, caddr_t _addr, int _data);

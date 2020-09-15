@@ -1,5 +1,5 @@
 # Defense4iOS
-Attack and Defense solutions for iOS. (This ReadMe.md file will be updated soon.)
+Attack and Defense solutions for iOS. (This README.md file will be updated soon.)
 
 * Attack App in dynamic-framework hacked in swizzling method(RunTime)
 * Attack App in dynamic-framework hacked in fishhook (Demo)
@@ -14,3 +14,5 @@ Attack and Defense solutions for iOS. (This ReadMe.md file will be updated soon.
 ![](./Images/Before-BinSort.png)
 ![](./Images/After-BinSort.png)  
 * ReSignature for dumped-ipa file and ReLink to new current xcode project
+* Best practice for iOS-Codes-Obfuscation in [MJCodeObfuscation](https://github.com/CoderMJLee/MJCodeObfuscation) based on  libclang.dylib  
+![](./Images/BuildSettings4Obfuscation.png)  
